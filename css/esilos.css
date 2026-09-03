@@ -1,0 +1,45 @@
+Arena-Purpura {
+    --color-fondo: #0E0B16;
+    --color-superficie: #1C1430;
+    --color-primario: #9146FF;
+    --color-acento: #00F5D4;
+    --color-texto: #F1ECFF;
+    --color-error: #FF5C7A;
+    --radio-borde: 8px;
+}
+
+Tactico_Rojo {
+    --color-fondo: #0F1923;
+    --color-superficie: #1B2733;
+    --color-primario: #FF4655;
+    --color-acento: #ECE8E1;
+    --color-texto: #ECE8E1;
+    --color-error: #FF8A00;
+}
+
+Oro_Competitivo{
+    --color-fondo: #0101A13;
+    --color-superficie: #0101A13;
+    --color-primario: #C89B3C;
+    --color-acento: #0AC8B9;
+    --color-texto: #F0E6D2;
+    --color-error: #E4572E;
+}
+
+Pista_y_Velocidad{
+    --color-fondo: #0A1A2F;
+    --color-superficie: #12294A;
+    --color-primario: #F79B14;
+    --color-acento: #00A8E8;
+    --color-texto: #F2F7FB;
+    --color-error: #FF5A5F;
+}
+
+Podio_Claro{
+    --color-fondo: #FAFAFA;
+    --color-superficie: #FFFFFF;
+    --color-primario: #1D3557;
+    --color-acento: #E63946;
+    --color-texto: #14181F;
+    --color-error: #B42318;
+}
