@@ -7,21 +7,32 @@
         <link rel="stylesheet" href="css/estilos.css">
     </head>
     <body>
-        <header class="cabecera">
-            <nav class="barra-navegacion" aria-label="Navegación principal">
-                <a class="marca" href="index.html">eSports Arena Manager</a>
+        <header>
+            <span class="logo">eSports Arena Manager</span>
+            <nav>
                 <ul class="menu-principal">
                     <li><a href="index.html" aria-current="page">Inicio</a></li>
-                    <li><a href="torneos.html"></a></li>
-                    <li><a href="inscripcion.html"></a></li>
-                    <li><a href="equipo.html"></a></li>
-                    <li><a href="perfil.html"></a></li>
+                    <li><a href="torneos.html">Torneos</a></li>
+                    <li><a href="inscripcion.html">Inscripcion</a></li>
+                    <li><a href="equipo.html">Mi Equipo</a></li>
+                    <li><a href="perfil.html">Mi Perfil</a></li>
                 </ul>
             </nav>
         </header>
+
         <main>
-            <section id="seccion-"></section>
-            hola
+            <section aria-labelledby="titulo-destacados">
+                <h1 id="titulo-destacados">Torneos destacados</h1>
+                <div class="grid" id="torneos-destacados"></div>
+            </section>
+
+            <section aria-labelledby="titulo-cierres">
+                <h2 id="titulo-cierres">Próximos cierres de inscripción</h2>
+                <ul id="proximos-cierres"></ul>
+            </section>
+
+            <section aria-labelledby="titulo"></section>
+
         </main>
     </body>
 </html>
