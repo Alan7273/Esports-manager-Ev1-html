@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eSports Arena Manager - Torneos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header>
+    <span class="logo">eSports Arena Manager</span>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="torneos.html" aria-current="page">Torneos</a></li>
+            <li><a href="torneo-detalle.html?id=t1">Detalle de Torneo</a></li>
+            <li><a href="inscripcion.html">Inscripción</a></li>
+            <li><a href="equipo.html">Mi equipo</a></li>
+            <li><a href="perfil.html">Mi perfil</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section aria-labelledby="titulo-filtros">
+        <h1 id="titulo-listado">Listado de torneos</h1>
+
+        <form class="filters" id="form-filtros">
+            <label for="filtro-juego">Juego
+                <select id="filtro-juego" name="Juego">
+                    <option value="">Todos</option>
+                    <option value="g1">Valorant</option>
+                    <option value="g2">League of Legends</option>
+                    <option value="g3">Rocket League</option>
+                </select>
+            </label>
+        </form>
+    </section>
+</main>
+</body>
+</html>
