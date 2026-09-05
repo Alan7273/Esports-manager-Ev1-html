@@ -32,10 +32,39 @@
                     <option value="g1">Valorant</option>
                     <option value="g2">League of Legends</option>
                     <option value="g3">Rocket League</option>
-                </select>hola
+                </select>
             </label>
+            <label for="filtro-estado">Estado
+                <select id="filtro-estado" name="Estado">
+                    <option value="">Todos</option>
+                    <option value="abierto">Abierto</option>
+                    <option value="en_curso">En_curso</option>
+                    <option value="finalizado">Finalizado</option>
+                </select>
+            </label>
+            <label for="filtro-nombre">Buscar por nombre
+                <input type="text" id="filtro-nombre" name="Nombre" autocomplete="off" placeholder="Ej: Copa Apertura">
+            </label>
+            <label for="filtro-fecha-inicio">Desde
+                <input type="date" id="filtro-fecha-inicio" name="desde">
+            </label>
+            <label for="filtro-fecha-fin">Hasta
+                <input type="date" id="filtro-fecha-fin" name="hasta">
+            </label>
+            <span class="error-msg" id="error-fechas" role="alert"></span>
         </form>
+
+        <div class="grid" id="lista-torneos"></div>
     </section>
 </main>
+
+<footer>
+    <p>&copy; eSports Arena Manager - Proyecto Semestral - 2026-2</p>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
+
+<!--hecho Alan-->
