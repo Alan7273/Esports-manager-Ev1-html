@@ -7,20 +7,47 @@
         <link rel="stylesheet" href="css/estilos.css">
     </head>
     <body>
-        <header class="cabecera">
-            <nav class="barra-navegacion" aria-label="Navegación principal">
-                <a class="marca" href="index.html">eSports Arena Manager</a>
+        <header>
+            <span class="logo">eSports Arena Manager</span>
+            <nav>
                 <ul class="menu-principal">
                     <li><a href="index.html" aria-current="page">Inicio</a></li>
-                    <li><a href="torneos.html"></a></li>
-                    <li><a href="inscripcion.html"></a></li>
-                    <li><a href="equipo.html"></a></li>
-                    <li><a href="perfil.html"></a></li>
+                    <li><a href="torneos.html">Torneos</a></li>
+                    <li><a href="torneo-detalle.html?id=t1">Detalle de torneo</a> </li>
+                    <li><a href="inscripcion.html">Inscripcion</a></li>
+                    <li><a href="equipo.html">Mi equipo</a></li>
+                    <li><a href="perfil.html">Mi perfil</a></li>
                 </ul>
             </nav>
         </header>
+
         <main>
-            <section id="seccion-"></section>
+            <section aria-labelledby="titulo-destacados">
+                <h1 id="titulo-destacados">Torneos destacados</h1>
+                <div class="grid" id="torneos-destacados"></div>
+            </section>
+
+            <section aria-labelledby="titulo-cierres">
+                <h2 id="titulo-cierres">Próximos cierres de inscripción</h2>
+                <ul id="proximos-cierres"></ul>
+            </section>
+
+            <section aria-labelledby="titulo-video">
+                <h2 id="titulo-video">Final de la ultima temporada</h2>
+                <article>
+                    <video controls poster="">
+                        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+                        Tu navegador no soporta video embebido.
+                    </video>
+                </article>
+            </section>
         </main>
+        
+    <footer>
+        <p>&copy; eSports Arena Manager - Proyecto Semestral - 2026-2</p>
+    </footer>
+    
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
     </body>
 </html>

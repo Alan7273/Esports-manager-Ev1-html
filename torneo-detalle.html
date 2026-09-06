@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eSport Arena Manager - Detalle de torneo</title>
+    <link rel="sylesheet" href="css/estilos.css">
+</head>
+<body>
+<header>
+    <span class="logo">eSport Arena Manager</span>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="torneos.html">Torneos</a></li>
+            <li><a href="torneo-detalle.html?id=t1" aria-current="page">Detalle de torneo</a></li>
+            <li><a href="inscripcion.html">Inscripcion</a></li>
+            <li><a href="equipo.html">Mi equipo</a></li>
+            <li><a href="perfil.html">Mi perfil </a></li>
+        </ul>
+    </nav>
+</header>
+
+<main id="detalle-torneo">
+    <section>
+        <h1 id="torneo-nombre"></h1>
+        <div id="torneo-info"></div>
+    </section>
+
+    <section>
+        <h1>Participantes inscritos</h1>
+        <ul id="torneo-participantes"></ul>
+    </section>
+
+    <section>
+        <h2>Calendario de partidas</h2>
+        <table>
+            <thead><tr><th>Ronda</th><th>Enfrentamiento</th><th>Fecha</th><th>Estado</th></tr></thead>
+            <tbody id="torneo-partidas"></tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Tabla de posiciones</h2>
+        <table>
+            <thead><tr><th>Posicion</th><th>Participante</th><th>Puntos</th></tr></thead>
+            <tbody id="torneo-posiciones"></tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>premios</h2>
+        <ul id="torneo-premios"></ul>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; eSports Arena Manager - Proyecto Semestral - 2026-2</p>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
