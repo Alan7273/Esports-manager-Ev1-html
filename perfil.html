@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eSport Arena Manager - Inscripcion</title>
+    <title>eSport Arena Manager - Mi perfil</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
@@ -20,57 +20,67 @@
         </ul>
     </nav>
 </header>
+
 <main>
     <section>
-        <h1>jugador</h1>
-        <div id="perfil de datos"></div>
+        <h1>Perfil de jugador</h1>
+        <div id="perfil-datos"></div>
     </section>
+
     <section>
-        <h1>equipos</h1>
-        <div id="perfil de equipos"></div>
+        <h2>Equipos</h2>
+        <ul id="perfil-equipos"></ul>
     </section>
+
     <section>
-        <h1>estadisticas</h1>
-        <div id="perfil de estadisticas"></div>
+        <h2>Estadisticas</h2>
+        <p id="perfil-estadisticas"></p>
     </section>
+
     <section>
-        <h1>sanciones</h1>
-        <div id="perfil de sanciones"></div>
+        <h2>Sanciones</h2>
+        <ul id="perfil-sanciones"></ul>
     </section>
+
     <section>
         <h2>editar datos</h2>
-        <form id="perfil" novalidate>
+        <form id="form-perfil" novalidate>
             <div class="field">
-                <label for="apodo">apodo</label>
-                <input type="text" id="apodo" autocomplete="username" required>
-                <span class="error" id="error apodo" role="alert"></span>
+                <label for="perfil-apodo">Apodo</label>
+                <input type="text" id="perfil-apodo" autocomplete="username" required>
+                <span class="error-msg" id="error-apodo" role="alert"></span>
             </div>
             <div class="field">
-                <label for="correo">correo</label>
-                <input type="email" id="correo" autocomplete="correo" required>
-                <span class="error" id="error correo" role="alert"></span>
+                <label for="perfil-email">Correo</label>
+                <input type="email" id="perfil-email" autocomplete="email" required>
+                <span class="error-msg" id="error-email" role="alert"></span>
             </div>
             <div class="field">
-                <label for="edad">edad</label>
-                <input type="number" id="edad" min="13" max="99" autocomplete="of" required>
-                <span class="error" id="error edad" role="alert"></span>
+                <label for="perfil-edad">Edad</label>
+                <input type="number" id="perfil-edad" min="13" max="99" autocomplete="off" required>
+                <span class="error-msg" id="error-edad" role="alert"></span>
             </div>
             <div class="field">
-                <label for="nueva contraseña">nueva contraseña</label>
-                <input type="password" id="nueva contraseña" autocomplete="nueva contraseña" required>
-                <span class="error" id="error contraseña" role="alert"></span>
+                <label for="perfil-password">Nueva contraseña</label>
+                <input type="password" id="perfil-password" autocomplete="new-password" required>
+                <span class="error-msg" id="error-password" role="alert"></span>
             </div>
             <div class="field">
-                <label for="confirmar contraseña">confirmar contraseña</label>
-                <input type="password" id="confirmar contraseña" autocomplete="nueva contraseña" required>
-                <span class="error" id="error nueva contraseña" role="alert"></span>
+                <label for="perfil-password2">Confirmar contraseña</label>
+                <input type="password" id="perfil-password2" autocomplete="new-password" required>
+                <span class="error-msg" id="error-password2" role="alert"></span>
             </div>
-            <button type="submit">guardar cambios</button>
-            <p id="confirmar" role="status"></p>
+            <button type="submit">Guardar cambios</button>
+            <p id="perfil-confirmacion" role="status"></p>
         </form>
     </section>
 </main>
-<script> src="js/data.js"</script>
-<script> src="js/app.js"</script>
+
+<footer>
+    <p>&copy; eSports Arena Manager - Proyecto Semestral - 2026-2</p>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

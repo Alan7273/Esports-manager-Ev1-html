@@ -1,64 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eSport Arena Manager - mi equipo</title>
-    <link rel="sylesheet" href="css/styles.css">
+    <title>eSport Arena Manager - Mi equipo</title>
+    <link rel="sylesheet" href="css/estilos.css">
 </head>
 <body>
-    <header>
-        <span class="logo">eSport Arena Manager</span>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="torneos.html">Torneo</a></li>
-                <li><a href="torneo-detalle.html?id=t1">Torneo detalle</a></li>
-                <li><a href="inscripcion.html" aria-current="page">Inscripcion</a></li>
-                <li><a href="equipo.html">mi equipo</a></li>
-                <li><a href="perfil.html">mi perfil </a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <span class="logo">eSport Arena Manager</span>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="torneos.html">Torneo</a></li>
+            <li><a href="torneo-detalle.html?id=t1">Detalle de torneo</a></li>
+            <li><a href="inscripcion.html">Inscripcion</a></li>
+            <li><a href="equipo.html" aria-current="page">Mi equipo</a></li>
+            <li><a href="perfil.html">Mi perfil </a></li>
+        </ul>
+    </nav>
+</header>
 
 <main>
     <section>
-        <h1>crear / gestionar equipo</h1>
-        <form>
+        <h1>Crear / gestionar equipo</h1>
+        <form id="form-equipo" novalidate>
             <div class="field">
-                <label for="nombre equipo">nombre del equipo</label>
-                <input type="text" id="nombre equipo" name="nombre equipo" autocomplete="off" required>
-                <span class="error-msg" id="error nombre" role="alert"></span>
+                <label for="equipo-nombre">Nombre del equipo</label>
+                <input type="text" id="equipo-nombre" name="nombre" autocomplete="off" required>
+                <span class="error-msg" id="error-nombre" role="alert"></span>
             </div>
 
             <div class="field">
-                <label for="equipo juego">juego principal</label>
-                <select id="equipo juego" name="juego"required></select>
+                <label for="equipo-juego">Juego principal</label>
+                <select id="equipo-juego" name="juego" required></select>
             </div>
 
             <div class="field">
-                <label for="equipo capitan">nombre del capitan</label>
-                <span class="error" id="equipo capitan" name="capitan" required></span>
+                <label for="equipo-capitan">Capitán</label>
+                <select id="equipo-capitan" name="capitan" required></select>
+                <span class="error-msg" id="equipo capitan" role="alert"></span>
             </div>
 
             <fieldset class="field">
                 <legend>Integrantes</legend>
-                <label for="nuevo jugador equipo">Jugador</label>
-                <select id="nuevo jugador equipo"></select>
-                <label for="nuevo rol equipo">Rol</label>
-                <input type="text" id="nuevo rol equipo" placeholder="ej: soporte" autocomplete="off">
-                <button type="button" id="agregar integrante">Agregar integrante</button>
-                <span class="error-msg" id="error integrantes" role="alert"></span>
-                <ul id="equipo integrantes"></ul>
+                <label for="equipo-nuevo-jugador">Jugador</label>
+                <select id="equipo-nuevo-jugador"></select>
+                <label for="equipo-nuevo-rol">Rol</label>
+                <input type="text" id="equipo-nuevo-rol" placeholder="Ej: Soporte" autocomplete="off">
+                <button type="button" id="btn-agregar-integrante">Agregar integrante</button>
+                <span class="error-msg" id="error-integrantes" role="alert"></span>
+                <ul id="equipo-integrantes"></ul>
             </fieldset>
 
-            <button type="submit">guardar equipo</button>
-            <p id="confirmacion equipo" role="status"></p>
+            <button type="submit">Guardar equipo</button>
+            <p id="equipo-confirmacion" role="status"></p>
         </form>
     </section>
 </main>
 
-    <script> src="js/data.js"</script>
-    <script> src="js/app.js"</script>
+<footer>
+    <p>&copy; eSports Arena Manager - Proyecto Semestral - 2026-2</p>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
