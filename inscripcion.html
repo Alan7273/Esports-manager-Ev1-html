@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eSport Arena Manager - Inscripción</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header>
+    <span class="logo">eSport Arena Manager</span>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="torneos.html">Torneos</a></li>
+            <li><a href="torneo-detalle.html?id=t1">Detalle de torneo</a></li>
+            <li><a href="inscripcion.html" aria-current="page">Inscripcion</a></li>
+            <li><a href="equipo.html">Mi equipo</a></li>
+            <li><a href="perfil.html">Mi perfil </a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h1>Inscripcion a torneo</h1>
+        <form id="form-inscripcion" novalidate>
+            <div class="field">
+                <label for="insc-tipo">tipo de participante</label>
+                <select id="insc-tipo" name="tipo">
+                    <option value="equipo">Equipo</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="insc-torneo">Torneo</label>
+                <select id="insc-torneo" name="torneo" required></select>
+                <span class="error-msg" id="error-torneo" role="alert"></span>
+            </div>
+
+            <div class="field">
+                <label for="insc-equipo">Equipo</label>
+                <select id="insc-equipo" name="equipo" required></select>
+                <span class="error-msg" id="error-equipo" role="alert"></span>
+            </div>
+
+            <p id="insc-resumen"></p>
+
+            <button type="submit">Confirmar inscripcion</button>
+            <p id ="insc-confirmacion" role="status"></p>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; eSports Arena Manager - Proyecto Semestral - 2026-2</p>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
